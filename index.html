@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./images/favicon-16x16.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <title>Pokédex</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main>
-        <img class="pokemon-img" src="./images/bubbles-pixel-yo.png" alt="">
-        <h1 class="pokemon-data">
-            <span class="pokemon-id"><img src="./images/favicon-16x16.png" alt=""></span>
-            <span class="pokemon-name"><img src="./images/favicon-16x16.png" alt=""></span>
-        </h1>
+      <img class="pokemon-img" src="./images/bubbles-pixel-yo.png" alt="" />
+      <h1 class="pokemon-data">
+        <span class="pokemon-id"
+          ><img src="./images/favicon-16x16.png" alt=""
+        /></span>
+        <span class="pokemon-name"
+          ><img src="./images/favicon-16x16.png" alt=""
+        /></span>
+      </h1>
 
-        <form class="form">
-            <input type="search" class="input-search" required placeholder=" --- ID or Name ---">
-        </form>
+      <form class="form">
+        <input
+          type="search"
+          class="input-search"
+          required
+          placeholder=" --- ID or Name ---"
+        />
+      </form>
 
-        <div class="buttons">
-            <button class="button btn-prev">&lt; Prev</button>
-            <button class="button btn-next">Next &gt;</button>
+      <div class="descriptions">
+        <p class="descriptions-p">
+          Descrição:
+          <span class="descriptions-span description">---</span>
+        </p>
+
+        <p class="descriptions-p">
+          Tipo: <span class="descriptions-span types">---</span>
+        </p>
+        <p class="descriptions-p">
+          Habilidades:
+          <span class="descriptions-span skills">---</span>
+        </p>
+
+        <div class="height-weight">
+          <p class="descriptions-p">
+            Altura: <span class="descriptions-span height">0.00</span> mts.
+          </p>
+          <p class="descriptions-p">
+            Peso: <span class="descriptions-span weight">0.00</span> kg
+          </p>
         </div>
+      </div>
 
-        <img class="pokedex" src="./images/pokedex.png" alt="pokedex-img">
+      <div class="buttons">
+        <button class="button btn-prev">&lt; Prev</button>
+        <button class="button btn-next">Next &gt;</button>
+      </div>
 
+      <img class="pokedex" src="./images/pokedex.png" alt="pokedex-img" />
     </main>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
